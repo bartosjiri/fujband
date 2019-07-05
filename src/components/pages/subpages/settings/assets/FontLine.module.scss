@@ -1,0 +1,41 @@
+@import "./../../../../layout/styles/fluid.scss";
+
+.fontline_selection {
+  background: var(--background-highlight);
+  padding: 4rem;
+  @include fluid("padding-top", 20, 40);
+  @include fluid("padding-bottom", 20, 40);
+}
+
+  .fontline_selection_title {
+    @include fluid("font-size", 16, 20);
+    text-align: center;
+  }
+
+.fontline_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 80%;
+  margin: 6rem auto;
+  @include fluid("margin-top", 10, 20);
+  @include fluid("margin-bottom", 10, 20);
+  @include fluid("padding-top", 10, 30);
+  height: 3.4rem;
+}
+
+  .fontline_list_item {
+    @include fluid("font-size", 16, 24);
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.4;
+    line-height: 3.4rem;
+  }
+
+    .fontline_list_item:hover {
+      opacity: 1;
+    }
+
+    .fontline_list_item_active {
+      opacity: 1;
+    }

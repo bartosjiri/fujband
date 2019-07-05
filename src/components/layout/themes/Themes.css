@@ -1,0 +1,48 @@
+html,
+html[data-theme="dark"] {
+  --background-basic: #121212;
+  --background-highlight: #1e1e1e;
+  --background-hover: #1a1a1a;
+  --background-divider: #282828;
+
+  --navbar-background: #1c1c1c;
+  --navbar-inactive: #8e8e8e;
+
+  --text-basic: #ffffff;
+  --text-alternative: #898989;
+
+  --home-bg: url("../../../media/home/pattern/dark/bg60.png");
+  --home-bg-moz: -moz-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%);
+  --home-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,18,18,0)), color-stop(100%, rgba(18,18,18,1))), url("../../../media/home/pattern/dark/bg60.png");
+  --home-bg-wk-lin: -webkit-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+  --home-bg-o: -o-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+  --home-bg-lin: linear-gradient(to bottom, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+}
+
+html[data-theme="light"] {
+  --background-basic: #f8f8f8;
+  --background-highlight: #efefef;
+  --background-hover: #eeeeee;
+  --background-divider: #dcdcdc;
+
+  --navbar-background: #fefefe;
+  --navbar-inactive: #a6a6a6;
+
+  --text-basic: #101010;
+  --text-alternative: #909090;
+
+  --home-bg: url("../../../media/home/pattern/light/bg40.png");
+  --home-bg-moz: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%);
+  --home-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,0)), color-stop(100%, rgba(248,248,248,1))), url("../../../media/home/pattern/light/bg40.png");
+  --home-bg-wk-lin: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+  --home-bg-o: -o-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+  --home-bg-lin: linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *:before,
+html.theme-transition *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
+}

@@ -1,0 +1,48 @@
+@import "./../styles/fluid.scss";
+
+.Navbar {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		overflow: hidden;
+		width: 100%;
+		z-index: 900;
+		background-color: var(--navbar-background);
+		color: var(--text-basic);
+	}
+
+		.Navbar ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			width: 100%;
+		}
+
+			.Navbar ul li {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+				.Navbar_item {
+					text-align: center;
+					width: 100%;
+					outline: none;
+				}
+
+					.Navbar_item svg {
+						fill: var(--text-basic);
+						@include fluid("width", 20, 28);
+						@include fluid("height", 20, 28);
+						opacity: 0.5;
+					}
+
+					.Navbar_item_active svg,
+					.Navbar_item:hover svg {
+						fill: var(--text-basic);
+						opacity: 0.85;
+					}
+
+						.Navbar ul li svg {
+							@include fluid("padding-top", 22, 30);
+							@include fluid("padding-bottom", 22, 30);
+						}

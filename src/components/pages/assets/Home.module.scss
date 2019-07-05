@@ -1,0 +1,96 @@
+@import "./../../layout/styles/fluid.scss";
+
+.intro {
+  background: var(--home-bg);
+  background-repeat: repeat; 
+  background: var(--home-bg-moz);
+  background: var(--home-bg-wk-grad);
+  background: var(--home-bg-wk-lin);
+  background: var(--home-bg-o);
+  background: var(--home-bg-lin);
+  background-size: 150px;
+}
+
+  .intro_logo {
+    padding: 6rem 4rem;
+  }
+
+    .intro_logo h1 {
+      display: inline-block;
+      @include fluid("font-size", 32, 52);
+      line-height: 1;
+      font-weight: 750;
+      text-transform: uppercase;
+      color: var(--text-basic);
+      vertical-align: middle;
+
+    }
+
+    .intro_logo span {
+      display: inline-block;
+      @include fluid("font-size", 10, 16);
+      font-weight: 750;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #69339b;
+      padding: 8px;
+      @include fluid("padding", 6, 8);
+      border-radius: 4px;
+      vertical-align: top;
+      margin-left: 8px;
+    }
+
+  .intro_subtitle {
+    padding: 4rem;
+    margin: 8rem 0;
+    @include fluid("margin-top", 30, 80);
+    @include fluid("margin-bottom", 30, 80);
+  }
+
+    .intro_subtitle h2 {
+      @include fluid("font-size", 28, 54);
+      line-height: 1.5;
+      color: var(--text-basic);
+    }
+
+  .intro_actions {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .intro_actions a {
+      display: inline-block;
+      padding: 3rem 4rem;
+      @include fluid("padding", 24, 40);
+      color: var(--text-basic);
+      background: var(--background-hover);
+      border-radius: 0.4rem;
+      outline: none;
+      @include fluid("font-size", 18, 26);
+      text-decoration: none;
+      width: calc(100% - 8rem);
+      /* vertical-align: bottom; */
+      opacity: 0.8;
+    }
+
+      .intro_actions a:hover {
+        opacity: 1;
+      }
+
+      .intro_actions a svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 2rem;
+        fill: var(--text-basic);
+        @include fluid("width", 20, 28);
+        @include fluid("height", 20, 28);
+      }
+
+    .intro_actions span {
+      @include fluid("font-size", 16, 22);
+      color:var(--text-alternative);
+      opacity: 0.5;
+      @include fluid("margin", 14, 20);
+    }
