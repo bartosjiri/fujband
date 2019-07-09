@@ -11,11 +11,14 @@ const All = () => {
 
     return (
         <ul className={style.songs_list}>
-            {songs.map(song => (
-                <li key={song.id} className={style.songs_list_item}>
-                    <Link to={`/songs/${song.slug}`}>{song.title}</Link>
-                </li>
-            ))}
+            {songs
+                .sort((a,b) => a.title.localeCompare(b.title))
+                .map(song => (
+                    <li key={song.id} className={style.songs_list_item}>
+                        <Link to={`/songs/${song.slug}`}>{song.title}</Link>
+                    </li>
+                ))
+            }
         </ul>
     );
 };
