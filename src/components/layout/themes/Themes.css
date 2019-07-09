@@ -10,13 +10,21 @@ html[data-theme="dark"] {
 
   --text-basic: #ffffff;
   --text-alternative: #898989;
+  
 
-  --home-bg: url("../../../media/home/pattern/dark/bg60.png");
-  --home-bg-moz: -moz-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%);
-  --home-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,18,18,0)), color-stop(100%, rgba(18,18,18,1))), url("../../../media/home/pattern/dark/bg60.png");
-  --home-bg-wk-lin: -webkit-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
-  --home-bg-o: -o-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
-  --home-bg-lin: linear-gradient(to bottom, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+  --intro-bg: url("../../../media/home/pattern/dark/bg60.png");
+  --intro-bg-moz: -moz-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%);
+  --intro-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,18,18,0)), color-stop(100%, rgba(18,18,18,1))), url("../../../media/home/pattern/dark/bg60.png");
+  --intro-bg-wk-lin: -webkit-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+  --intro-bg-o: -o-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+  --intro-bg-lin: linear-gradient(to bottom, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%), url("../../../media/home/pattern/dark/bg60.png");
+
+  --group-bg: url("../../../media/home/group/group_background.jpg");
+  --group-bg-moz: -moz-linear-gradient(left, rgba(26,26,26,1) 33%, rgba(26,26,26,0) 100%);
+  --group-bg-wk-grad: -webkit-gradient(left top, right top, color-stop(33%, rgba(26,26,26,1)), color-stop(100%, rgba(26,26,26,0))), url("../../../media/home/group/group_background.jpg");
+  --group-bg-wk-lin: -webkit-linear-gradient(right, rgba(26,26,26,1) 33%, rgba(26,26,26,0) 100%), url("../../../media/home/group/group_background.jpg");
+  --group-bg-o: -o-linear-gradient(left, rgba(26,26,26,1) 33%, rgba(26,26,26,0) 100%), url("../../../media/home/group/group_background.jpg");
+  --group-bg-lin: linear-gradient(to right, rgba(26,26,26,1) 33%, rgba(26,26,26,0) 100%), url("../../../media/home/group/group_background.jpg");
 }
 
 html[data-theme="light"] {
@@ -29,14 +37,21 @@ html[data-theme="light"] {
   --navbar-inactive: #a6a6a6;
 
   --text-basic: #101010;
-  --text-alternative: #909090;
+  --text-alternative: #626262;
 
-  --home-bg: url("../../../media/home/pattern/light/bg40.png");
-  --home-bg-moz: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%);
-  --home-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,0)), color-stop(100%, rgba(248,248,248,1))), url("../../../media/home/pattern/light/bg40.png");
-  --home-bg-wk-lin: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
-  --home-bg-o: -o-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
-  --home-bg-lin: linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+  --intro-bg: url("../../../media/home/pattern/light/bg40.png");
+  --intro-bg-moz: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%);
+  --intro-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,0)), color-stop(100%, rgba(248,248,248,1))), url("../../../media/home/pattern/light/bg40.png");
+  --intro-bg-wk-lin: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+  --intro-bg-o: -o-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+  --intro-bg-lin: linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url("../../../media/home/pattern/light/bg40.png");
+
+  --group-bg: url("../../../media/home/group/group_background.jpg");
+  --group-bg-moz: -moz-linear-gradient(left, rgba(238,238,238,1) 33%, rgba(238,238,238,0) 100%);
+  --group-bg-wk-grad: -webkit-gradient(left top, right top, color-stop(33%, rgba(238,238,238,1)), color-stop(100%, rgba(238,238,238,0))), url("../../../media/home/group/group_background.jpg");
+  --group-bg-wk-lin: -webkit-linear-gradient(right, rgba(238,238,238,1) 33%, rgba(238,238,238,0) 100%), url("../../../media/home/group/group_background.jpg");
+  --group-bg-o: -o-linear-gradient(left, rgba(238,238,238,1) 33%, rgba(238,238,238,0) 100%), url("../../../media/home/group/group_background.jpg");
+  --group-bg-lin: linear-gradient(to right, rgba(238,238,238,1) 33%, rgba(238,238,238,0) 100%), url("../../../media/home/group/group_background.jpg");
 }
 
 html.theme-transition,
