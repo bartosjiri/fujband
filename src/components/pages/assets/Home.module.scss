@@ -23,7 +23,6 @@
       text-transform: uppercase;
       color: var(--text-basic);
       vertical-align: middle;
-
     }
 
     .intro_logo span {
@@ -69,6 +68,7 @@
       border-radius: 0.4rem;
       outline: none;
       @include fluid("font-size", 18, 26);
+      line-height: 1.5;
       text-decoration: none;
       width: calc(100% - 8rem);
       /* vertical-align: bottom; */
@@ -83,6 +83,7 @@
         display: inline-block;
         vertical-align: middle;
         margin-right: 2rem;
+        @include fluid("margin-right", 24, 40);
         fill: var(--text-basic);
         @include fluid("width", 20, 28);
         @include fluid("height", 20, 28);
@@ -139,7 +140,10 @@
       grid-row-end: 3;
       margin: auto 0;
       margin-right: 2rem;
+      @include fluid("margin-right", 24, 40);
       fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
     }
 
     .group_card h4 {
