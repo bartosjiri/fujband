@@ -41,11 +41,10 @@ const Home = () => {
             </div>
             <div className={style.group}>
                 <h3>Přidejte se do naší skupiny a zjistěte, kde hrajeme přístě</h3>
-                <a className={style.group_card} href="https://www.facebook.com/groups/155393241722548/" target="_blank">
+                <a className={style.group_card} href="https://www.facebook.com/groups/155393241722548/" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172" fill="#ffffff"><path d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z"></path></svg>
                     <h4>Muzikovat Tu & Tam</h4>
                     <p>Tu&nbsp;a&nbsp;tam si jdeme zamuzikovat, zahrát a&nbsp;zazpívat, do&nbsp;parku, na&nbsp;náměstí, do&nbsp;hospody.</p>
-                    <img></img>
                 </a>
             </div>
         </Content>
