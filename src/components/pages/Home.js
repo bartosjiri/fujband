@@ -19,7 +19,7 @@ const Home = () => {
                     <span>Zpěvník</span>
                 </div>
                 <div className={style.intro_subtitle}>
-                    <h2>Nejzpívanější písničky <br /> vždy po ruce</h2>
+                    <h2>Nejzpívanější písničky <br />vždy po ruce</h2>
                 </div>
                 <div className={style.intro_actions}>
                     <Link 
