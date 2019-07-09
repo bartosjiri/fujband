@@ -6,7 +6,7 @@ import Content from "./../layout/Content";
 const About = () => {
     return (
         <Fragment>
-            <Topbar title="About"></Topbar>
+            <Topbar title="O aplikaci"></Topbar>
             <Content>
                 --to be done
             </Content>
