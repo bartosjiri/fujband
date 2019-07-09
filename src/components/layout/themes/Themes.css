@@ -58,6 +58,10 @@ html.theme-transition,
 html.theme-transition *,
 html.theme-transition *:before,
 html.theme-transition *:after {
+  -webkit-transition: all 500ms !important;
+  -moz-transition: all 500ms !important;
+  -ms-transition: all 500ms !important;
+  -o-transition: all 500ms !important;
   transition: all 500ms !important;
   transition-delay: 0 !important;
 }
