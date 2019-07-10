@@ -1,0 +1,226 @@
+@import "./../../layout/styles/fluid.scss";
+
+.about_subtitle {
+  @include fluid("font-size", 16, 22);
+  line-height: 1.5;
+  color: var(--text-alternative);
+  margin-bottom: 2rem;
+}
+
+.fujband {
+  padding: 2rem 4rem;
+}
+
+  .fujband p {
+    display: grid;
+    // grid-template-columns: auto 1fr auto;
+    // grid-template-rows: auto auto;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-basic);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+    @include fluid("font-size", 16, 22);
+    line-height: 1.5;
+  }
+
+.group {
+  padding: 2rem 4rem;
+}
+
+  .group_card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-basic);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+    background: var(--group-bg);
+    background: var(--group-bg-moz);
+    background: var(--group-bg-wk-grad);
+    background: var(--group-bg-wk-lin);
+    background: var(--group-bg-o);
+    background: var(--group-bg-lin);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    .group_card:hover {
+      opacity: 1;
+    }
+
+    .group_card svg {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      margin: auto 0;
+      margin-right: 2rem;
+      @include fluid("margin-right", 24, 40);
+      fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
+    }
+
+    .group_card h4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      @include fluid("font-size", 18, 26);
+      line-height: 2;
+    }
+
+    .group_card p {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      @include fluid("font-size", 16, 22);
+      line-height: 1.5;
+      opacity: 0.8;
+      // color: var(--text-alternative);
+      width: 60%;
+    }
+
+
+.stats {
+  padding: 2rem 4rem;
+}
+
+  .stats_card {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-basic);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+  }
+
+    .stats_card_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+      .stats_card_item span {
+        @include fluid("font-size", 18, 26);
+        line-height: 1.5;
+      }
+
+      .stats_card_item p {
+        @include fluid("font-size", 16, 22);
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+
+
+.updates {
+  padding: 2rem 4rem;
+}
+
+  .updates_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-basic);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+  }
+
+    .updates_card_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+      .updates_card_item span {
+        @include fluid("font-size", 18, 26);
+        line-height: 1.5;
+      }
+
+      .updates_card_item p {
+        @include fluid("font-size", 16, 22);
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+
+.open {
+  padding: 2rem 4rem 6rem;
+}
+
+  .open_card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-basic);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+  }
+
+    .open_card:hover {
+      opacity: 1;
+    }
+
+    .open_card svg {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      margin: auto 0;
+      margin-right: 2rem;
+      @include fluid("margin-right", 24, 40);
+      fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
+    }
+
+    .open_card h4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      @include fluid("font-size", 18, 26);
+      line-height: 2;
+    }
+
+    .open_card p {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      @include fluid("font-size", 16, 22);
+      line-height: 1.5;
+      opacity: 0.8;
+      // color: var(--text-alternative);
+      // width: 80%;
+    }
