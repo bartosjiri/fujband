@@ -6,4 +6,6 @@
   overflow-y: auto;
   /* margin-bottom: calc(6rem + 2.8rem); */
   @include fluid("margin-bottom", 64, 88);
+  background: var(--background-basic);
+  color: var(--text-basic);
 }

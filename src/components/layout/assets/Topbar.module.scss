@@ -1,7 +1,8 @@
 @import "./../styles/fluid.scss";
 
 .Topbar {
-
+  background: var(--background-basic);
+  color: var(--text-basic);
 }
 
 .Topbar_header {
