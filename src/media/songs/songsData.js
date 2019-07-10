@@ -942,6 +942,30 @@ export const songsData = [
         text: "[Arnošt]:<br />Ahoj, ahoj, ahoj, tak jsme zase tady spolu jako každou středu, jako každý pátek. Je tady váš Arnošt se svou diskotékou. Ano ano ano a už je to tady, už to jede, už se to roztáčí. Je to fajn? Je to fajn. Je to fajn.</p><p>Jedu dál stále s tebou<br />Víme kam cesty vedou<br />Je to fajn, fajn, fajn, je to fajn fajnový</p><p>Príma den se nám dělá<br />Nálada prostě skvělá<br />Je to fajn, fajn, fajn, je to fajn fajnový<br />Vozím s sebou hity tutový</p><p>Máme se dneska fajn, je nám hej<br />Přijel k nám pan diskžokej<br />Pouští nám hity, co se tolik líbí<br />Přijel boží jezdec, do kroku nám svítí.<br />Je to fajn, (holka: Colu) je to fajn....</p><p>[Holka]: Ahoj kotě...<br />[Kluk]: Áhoj kotě..Startku? Sou moc dobrý.<br />[H]: Nekouřím.<br />[K]: Máte to tady opravdu moc hezký<br />[H]: To jsem ráda, že se ti tu líbí<br />[K]: Arnoštek je prostě boží...<br />[H]: Tak Vy jste se skamarádili, no to je skvělý<br />[K]: Mmm.... Nejen to. Budeme spolu točit videoklipy a já to budu režírovat.<br />[H]: Ne....<br />[K]: Mám pro tebe hlavní roli, bereš?<br />[H]: To je smůla. Zrovna odjíždím na dlouhé turné po světě.<br />[K]: Co dělat. Budu muset obsadit Běhalovou. Je to jedna buchta od nás z kanclu. Hrozně po mně jede.<br />[H]: Chápu. Kdo by po tobě nejel.<br />[K]: Nevěš hlavu, můžeme si spolu aspoň zatančit.<br />[H]: Ty taky tančíš?<br />[K]: Je to tak. Jsem jeden z nejlepších tanečníků disco.<br />[H]: Tak to moc nerozbaluj. Ať ty ubožáky neztrapníš.<br />[K]: Jdeme na to, kotě!</p><p>[Arnošt:] Ale, ale, co to nevidí oko mé modravé: Ahoj kočko. Tak to dneska rozjedeme, tak to rozbalíme. Jste skvělí, jste báječní, jste dokonalí. Mám vás rád.</p><p>Roztáčím hvězdná kola<br />Správná věc, tanec volá<br />Je to fajn, fajn, fajn, je to fajn fajnový</p><p>Každý sám, všichni spolu<br />Jeden džus, druhý colu<br />Je to fajn, fajn, fajn, je to fajn fajnový<br />Vozím s sebou hity tutový</p><p>Máme se dneska fajn, je nám hej ([Kluk 2]: Hej, to se jede u vás tohleto, to je dobrá pruda)<br />Přijel k nám pan diskžokej<br />Pouští nám hity, co se tolik líbí<br />Přijel boží jezdec, do kroku nám svítí<br />Je to fajn<br />Je to fajn</p><p>Máme se dneska fajn, je nám hej<br />Přijel k nám pan diskžokej<br />Pouští nám hity, co se tolik líbí<br />Přijel boží jezdec, do kroku nám svítí<br />Je to fajn<br />Je to fajn<br />Je to fajn<br />Je to fajn<br />Je to faajn</p><p>Je to fajn, fajn, fajn<br />je to fajn.",
         views: 0,
         added: 0
+    },
+    {
+        id: 120,
+        slug: "dva-slechtici",
+        title: "Dva šlechtici",
+        text: "<p>Dva ctnostní a ješitní šlechtici<br/>Vedli debatu v zavřené sednici<br/>Na velkou železnou petlici<br/>O šaškově barevné čepici<br/>Má na konci rolničky zvonící<br/><br/>Rolničky zvonící na barevné čepici v zavřené sednici na železnou petlici<br/> ...dva šlechtici</p><p> Jeden říká že je život na nic</br>Ať už seš či nejseš panic</br>Druhý přitaká cigaretu balíc</br>Neřeší zda je mladý zajíc</br>Modrou krev má totiž jenom šlechtic</br><br/>Modrou krev máme, zajíce si dáme, cigáro mi táhne, panice známe<br/>...dva šlechtici</p><p>Vojta: Sire co vás dneska trápí<br/>Pepé: Moji duši derou orlí drápy<br/>Pepé: A jak vám je dnes povězte mi hrabě<br/>Pepé: Mně přijde že dobře právě<br/>Pepé: ale vím že to se řekne hravě<br/>Vojta: pravda je usazená na dně v kávě<br/><br/>Pravda je v kávě, to se řekne hravě, mě zajímá právě, co se děje právě <br/>...dva šlechtici</p>",
+        views: 0,
+        added: 0
+    },
+    {
+        id: 121,
+        slug: "otakarek-fenyklovy",
+        title: "Otakárek fenyklový",
+        text: "<p>Jeden motýl co měl rohy<br/>pět tykadel neznal bohy<br/>z květu na květ lítal pro pyl<br/>všechny prachy co měl, propil</p><p>Tendle motýl když se opil<br/>tak neplechu často tropil<br/>někdy vyhulil si sosák<br/>až se trávou celý prosák</p ><p>Vlasy měl jak lesní křoví<br/>Co je todle za motýla / kreténa <br/>kdo mi todleto zodpoví <br/>otakárek fenyklový</p><p>Jako střela letí světem <br/>uhni blbče sic tě smete<br/>Tendle motýl sluje pepé <br/>o si říká o repeté</p>",
+        views: 0,
+        added: 0
+    },
+    {
+        id: 122,
+        slug: "reklama-na-ticho",
+        title: "Reklama na ticho",
+        text: "<p>Reklamu na ticho,< br />Dnes v telke dávajú<br/>Každý z nás spozornie<br/>Len čo zbadá ju<br/>Reklamu na ticho ten súčasný hit<br/>Krásnym tichom z dovozu<br/>Naplňte svoj byt</p><p>Môžete ho zohnať len pod rukou<br/>Nádherné ticho hôr<br/>Výberové ticho so zárukou<br/>Získa ho kto príde skôr</p><p>Pred Tuzákom stojí rad<br/>Dlhý, pomalý<br/>V tlačenici musíš stáť<br/>ticho dostali<br/>v konzervách a plechovkách od Coca Coly<br/>také čerstvé ticho ach <br/>Až to zabolí</p><p>Môžete ho zohnať len pod rukou<br/>Nádherné ticho hôr<br/>Výberové ticho so zárukou<br/>Získa ho kto príde skôr</p><p>Reklama na ticho<br/>Zo všetkých strán znie<br/>Vo farbe a s hudbou<br/>Je to úžasné<br/>Decibely hluku<br/>To ticho znásobí<br/>Minulo sa ticho<br/>Nie sú zásoby</p><p>Môžete ho zohnať len pod rukou<br/>Nádherné ticho hôr<br/>Výberové ticho so zárukou<br/>Získa ho kto príde skôr</p><p>Pred Tuzákom stojí rad<br/>Dlhý, pomalý<br/>V tlačenici musíš stáť<br/>Ticho dostali<br/>V konzervách a v plechovkách<br/>Od Coca Coly<br />Také čerstvé ticho ach<br/>Až to zabolí</p><p>Môžete ho zohnať len pod rukou<br />Nádherné ticho hôr<br />Výberové ticho so zárukou<br/>Získa ho kto príde skôr</p><p>Môžete ho zohnať len pod rukou<br />Nádherné ticho hôr<br />Výberové ticho so zárukou<br/>Získa ho kto príde skôr</p>",
+        views: 0,
+        added: 0
     }
 ];
 
