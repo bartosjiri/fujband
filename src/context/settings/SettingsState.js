@@ -58,6 +58,12 @@ const SettingsState = props => {
         window.setTimeout(function () {
             document.documentElement.classList.remove('theme-transition')
         }, 1000);
+
+        if (theme === "dark") {
+            document.querySelector("meta[name=theme-color]").setAttribute("content", "#121212");
+        } else {
+            document.querySelector("meta[name=theme-color]").setAttribute("content", "#f8f8f8");
+        }
     };
 
     return (
