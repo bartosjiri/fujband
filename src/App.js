@@ -16,7 +16,7 @@ import Settings from "./components/pages/Settings";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/subpages/util/NotFound";
 
-function App() {
+const App = () => {
     return (
         <SettingsState>
             <SongsState>
