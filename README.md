@@ -4,13 +4,15 @@ Lyrics single-page application for a local folklore band. Built for easier engag
 
 ![FUJBand application](https://i.imgur.com/JWRX3jg.png)
 
-This repository contains the client part of the application - data and administration are provided through separate application.
+This repository contains the client part of the application - data and administration are provided through separate project.
 
 ## Features
 - Browse or search lyrics of commonly performed songs
 - Adjust font size, alignment and line height
 - Switch between light and dark modes
 - Discover more about the band and its upcoming events
+
+Upcoming features can be found in the *[projects section](https://github.com/pryetranka/fujband/projects/1)* of the repository.
 
 ## Contributing
 Any fixes, updates and improvements are welcome, however, when contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
