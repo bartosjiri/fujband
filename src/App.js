@@ -1,5 +1,7 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Router, Route, Switch} from "react-router-dom";
+import {createBrowserHistory} from "history";
+import ReactGA from 'react-ga';
 
 import './App.css';
 import "./components/layout/themes/Themes.css";
@@ -16,11 +18,17 @@ import Settings from "./components/pages/Settings";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/subpages/util/NotFound";
 
+const history = createBrowserHistory();
+ReactGA.initialize("UA-103619462-3");
+history.listen((location) => {
+    ReactGA.pageview(location.pathname + location.search);
+});
+
 const App = () => {
     return (
         <SettingsState>
             <SongsState>
-                <Router>
+                <Router history={history}>
                     <main>
                         <Switch>
                             <Route path="/" exact component={Home}></Route>
