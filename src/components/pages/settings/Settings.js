@@ -2,14 +2,14 @@ import React, {Fragment, useState} from 'react';
 
 import style from "./assets/Settings.module.scss";
 
-import Topbar from "./../layout/Topbar";
-import Content from "./../layout/Content";
+import Topbar from "../../layout/Topbar";
+import Content from "../../layout/Content";
 
-import FontSize from "./subpages/settings/FontSize";
-import FontLine from "./subpages/settings/FontLine";
-import FontAlign from "./subpages/settings/FontAlign";
-import Theme from "./subpages/settings/Theme";
-import Preview from "./subpages/settings/Preview";
+import FontSize from "./components/FontSize";
+import FontLine from "./components/FontLine";
+import FontAlign from "./components/FontAlign";
+import Theme from "./components/Theme";
+import Preview from "./components/Preview";
 
 const Settings = () => {
     const [activeButton, setActiveButton] = useState("fontSize");

@@ -1,4 +1,4 @@
-@import "./../../layout/styles/fluid.scss";
+@import "../../../layout/styles/fluid.scss";
 
 .about_subtitle {
   @include fluid("font-size", 16, 22);

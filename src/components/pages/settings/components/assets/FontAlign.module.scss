@@ -1,18 +1,18 @@
-@import "./../../../../layout/styles/fluid.scss";
+@import "../../../../layout/styles/fluid.scss";
 
-.fontsize_selection {
+.fontalign_selection {
   background: var(--background-highlight);
   padding: 4rem;
   @include fluid("padding-top", 20, 40);
   @include fluid("padding-bottom", 20, 40);
 }
 
-  .fontsize_selection_title {
+  .fontalign_selection_title {
     @include fluid("font-size", 16, 20);
     text-align: center;
   }
 
-.fontsize_list {
+.fontalign_list {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -24,29 +24,23 @@
   height: 3.4rem;
 }
 
-  .fontsize_list_item {
+  .fontalign_list_item {
     cursor: pointer;
     opacity: 0.4;
     line-height: 3.4rem;
-    vertical-align: middle;
   }
 
-    .fontsize_list_item_16px {
-      font-size: 1.6rem;
-    }
-
-    .fontsize_list_item_24px {
-      font-size: 2.4rem;
-    }
-
-    .fontsize_list_item_32px {
-      font-size: 3.2rem;
-    }
-
-    .fontsize_list_item:hover {
+    .fontalign_list_item:hover {
       opacity: 1;
     }
 
-    .fontsize_list_item_active {
+    .fontalign_list_item svg {
+      fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
+      vertical-align: middle;
+    }
+
+    .fontalign_list_item_active {
       opacity: 1;
     }

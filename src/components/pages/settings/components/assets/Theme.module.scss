@@ -1,18 +1,18 @@
-@import "./../../../../layout/styles/fluid.scss";
+@import "../../../../layout/styles/fluid.scss";
 
-.fontline_selection {
+.theme_selection {
   background: var(--background-highlight);
   padding: 4rem;
   @include fluid("padding-top", 20, 40);
   @include fluid("padding-bottom", 20, 40);
 }
 
-  .fontline_selection_title {
+  .theme_selection_title {
     @include fluid("font-size", 16, 20);
     text-align: center;
   }
 
-.fontline_list {
+.theme_list {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -24,18 +24,24 @@
   height: 3.4rem;
 }
 
-  .fontline_list_item {
-    @include fluid("font-size", 16, 24);
-    vertical-align: middle;
+  .theme_list_item {
+    
     cursor: pointer;
     opacity: 0.4;
     line-height: 3.4rem;
   }
 
-    .fontline_list_item:hover {
+    .theme_list_item:hover {
       opacity: 1;
     }
 
-    .fontline_list_item_active {
+    .theme_list_item svg {
+      fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
+      vertical-align: middle;
+    }
+
+    .theme_list_item_active {
       opacity: 1;
     }

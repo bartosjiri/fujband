@@ -1,11 +1,11 @@
 import React, {Fragment, useContext} from 'react';
 
-import Topbar from "./../layout/Topbar";
-import Content from "./../layout/Content";
+import Topbar from "../../layout/Topbar";
+import Content from "../../layout/Content";
 
 import style from "./assets/About.module.scss";
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from "../../../context/songs/songsContext";
 
 const About = () => {
     const songsContext = useContext(SongsContext);

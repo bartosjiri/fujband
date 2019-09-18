@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 
 import style from "./assets/Home.module.scss";
 
-import Content from "./../layout/Content";
+import Content from "../../layout/Content";
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from "../../../context/songs/songsContext";
 
 const Home = () => {
     const songsContext = useContext(SongsContext);

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import style from "./assets/NotFound.module.scss";
 
-import Content from "../../../layout/Content";
+import Content from "../../layout/Content";
 
 const NotFound = () => {
     return (

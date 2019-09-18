@@ -8,7 +8,7 @@ import Content from "../../../layout/Content";
 
 import style from "./assets/Song.module.css";
 
-import NotFound from "./../util/NotFound";
+import NotFound from "../../util/NotFound";
 
 const Song = (props) => {
     const settingsContext = useContext(SettingsContext);

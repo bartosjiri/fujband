@@ -2,10 +2,10 @@ import React, {Fragment} from 'react';
 
 import style from "./assets/Songs.module.scss";
 
-import Topbar from "./../layout/Topbar";
-import Content from "./../layout/Content";
+import Topbar from "../../layout/Topbar";
+import Content from "../../layout/Content";
 
-import All from "./subpages/songs/All.js";
+import All from "./components/All";
 
 const Songs = () => {
     return (
