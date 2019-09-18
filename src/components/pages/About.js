@@ -55,7 +55,7 @@ const About = () => {
                             <p>Skladby</p>
                         </div>
                         <div className={style.updates_card_item}>
-                            <span>10.7.2019</span>
+                            <span>18.9.2019</span>
                             <p>Aplikace</p>
                         </div>
                     </div>
