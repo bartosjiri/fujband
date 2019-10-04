@@ -12,12 +12,11 @@ const FontSize = () => {
             setFontSize(size);
             localStorage.setItem("fontSize", size);
         }
-        
     };
 
     return (     
         <div className={style.fontsize_selection}>
-            <h3 class={style.fontsize_selection_title}>Velikost textu</h3>
+            <h3 className={style.fontsize_selection_title}>Velikost textu</h3>
             <ul className={style.fontsize_list}>
                 <li 
                     name="decrease" 

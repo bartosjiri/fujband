@@ -14,7 +14,7 @@ const FontLine = () => {
 
     return (
         <div className={style.fontline_selection}>
-            <h3 class={style.fontline_selection_title}>Řádkování textu</h3>
+            <h3 className={style.fontline_selection_title}>Řádkování textu</h3>
             <ul className={style.fontline_list}>
                 <li 
                     name="1.0" 

@@ -15,7 +15,7 @@ const Theme = () => {
 
     return (
         <div className={style.theme_selection}>
-            <h3 class={style.theme_selection_title}>Výběr motivu</h3>
+            <h3 className={style.theme_selection_title}>Výběr motivu</h3>
             <ul className={style.theme_list}>
                 <li 
                     name="light" 

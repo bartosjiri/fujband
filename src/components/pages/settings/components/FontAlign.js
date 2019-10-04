@@ -15,7 +15,7 @@ const FontAlign = () => {
 
     return (
         <div className={style.fontalign_selection}>
-            <h3 class={style.fontalign_selection_title}>Zarovnání textu</h3>
+            <h3 className={style.fontalign_selection_title}>Zarovnání textu</h3>
             <ul className={style.fontalign_list}>
                 <li
                     name="left"
