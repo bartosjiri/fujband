@@ -25,28 +25,25 @@
 }
 
   .fontsize_list_item {
+    @include fluid("font-size", 16, 24);
+    vertical-align: middle;
     cursor: pointer;
     opacity: 0.4;
     line-height: 3.4rem;
-    vertical-align: middle;
   }
-
-    .fontsize_list_item_16px {
-      font-size: 1.6rem;
-    }
-
-    .fontsize_list_item_24px {
-      font-size: 2.4rem;
-    }
-
-    .fontsize_list_item_32px {
-      font-size: 3.2rem;
-    }
 
     .fontsize_list_item:hover {
       opacity: 1;
     }
 
-    .fontsize_list_item_active {
-      opacity: 1;
+    .fontalign_list_item svg {
+      fill: var(--text-basic);
+      @include fluid("width", 20, 28);
+      @include fluid("height", 20, 28);
+      vertical-align: middle;
+    }
+
+    .fontsize_list_item_disabled {
+      opacity: 0;
+      pointer-events: none;
     }
