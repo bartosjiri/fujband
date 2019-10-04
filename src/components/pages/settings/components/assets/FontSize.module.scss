@@ -36,7 +36,7 @@
       opacity: 1;
     }
 
-    .fontalign_list_item svg {
+    .fontsize_list_item svg {
       fill: var(--text-basic);
       @include fluid("width", 20, 28);
       @include fluid("height", 20, 28);
