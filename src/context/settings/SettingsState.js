@@ -57,7 +57,7 @@ const SettingsState = props => {
         document.documentElement.setAttribute("data-theme", theme);
         window.setTimeout(function () {
             document.documentElement.classList.remove('theme-transition')
-        }, 1000);
+        }, 275);
 
         if (theme === "dark") {
             document.querySelector("meta[name=theme-color]").setAttribute("content", "#121212");
