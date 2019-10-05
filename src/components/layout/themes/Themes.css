@@ -11,7 +11,6 @@ html[data-theme="dark"] {
   --text-basic: #ffffff;
   --text-alternative: #898989;
   
-
   --intro-bg: url("../../../media/home/pattern/dark/bg60.png");
   --intro-bg-moz: -moz-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%);
   --intro-bg-wk-grad: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,18,18,0)), color-stop(100%, rgba(18,18,18,1))), url("../../../media/home/pattern/dark/bg60.png");
@@ -54,14 +53,16 @@ html[data-theme="light"] {
   --group-bg-lin: linear-gradient(to right, rgba(238,238,238,1) 33%, rgba(238,238,238,0) 100%), url("../../../media/home/group/group_background.jpg");
 }
 
-html.theme-transition,
+
+html.theme-transition {
+  -webkit-transition: color 0.25s !important;
+  transition: color 0.25s !important;
+  /* Note: color transitions in Chrome seem to be ignored/delayed */
+}
+
 html.theme-transition *,
 html.theme-transition *:before,
 html.theme-transition *:after {
-  -webkit-transition: all 500ms !important;
-  -moz-transition: all 500ms !important;
-  -ms-transition: all 500ms !important;
-  -o-transition: all 500ms !important;
-  transition: all 500ms !important;
-  transition-delay: 0 !important;
+  -webkit-transition: fill 0.25s, background 0.25s !important;
+  transition: fill 0.25s, background 0.25s !important;
 }
