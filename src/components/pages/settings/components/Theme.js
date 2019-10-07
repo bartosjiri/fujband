@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext} from "react";
 import SettingsContext from "../../../../context/settings/settingsContext";
 
 import style from "./assets/Theme.module.scss";
@@ -6,7 +6,6 @@ import style from "./assets/Theme.module.scss";
 const Theme = () => {
     const settingsContext = useContext(SettingsContext);
     const {setTheme, theme} = settingsContext;
-
 
     const onChange = (option) => {
         setTheme(option);

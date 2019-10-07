@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext} from "react";
 import SettingsContext from "../../../../context/settings/settingsContext";
 
 import style from "./assets/FontSize.module.scss";
@@ -7,10 +7,10 @@ const FontSize = () => {
     const settingsContext = useContext(SettingsContext);
     const {setFontSize, fontSize} = settingsContext;
 
-    const onChange = (size) => {
-        if (size >= 6 && size <= 60) {
-            setFontSize(size);
-            localStorage.setItem("fontSize", size);
+    const onChange = (option) => {
+        if (option >= 6 && option <= 60) {
+            setFontSize(option);
+            localStorage.setItem("fontSize", option);
         }
     };
 

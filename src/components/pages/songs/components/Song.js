@@ -19,8 +19,6 @@ const Song = (props) => {
 
     useEffect(() => {
         setCurrentSong(props.match.params.slug);
-        // přidat update views
-
         // eslint-disable-next-line
     }, []);
     
@@ -39,7 +37,7 @@ const Song = (props) => {
                                     textAlign: fontAlign
                                 }}
                             >
-                                {/* Předělat pro markdownu */}
+                                {/* Preferably find other way to provide song lyrics bellow */}
                                 <div dangerouslySetInnerHTML={{ __html: currentSong.text }}></div>
                             </div>
                         </Content>

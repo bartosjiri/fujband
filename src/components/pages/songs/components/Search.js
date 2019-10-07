@@ -37,7 +37,6 @@ const Search = () => {
             <Topbar 
                 title="Vyhledávání" 
                 closeLink="/songs"
-                // Odkaz zpět na podle toho odkud přicházím: Home nebo Songs
             ></Topbar>
             <Content>
                 <div className={style.search_actions}>
@@ -63,8 +62,6 @@ const Search = () => {
                 </div> 
                     
                 <div className={style.search_results}>
-                    {/* <h4>{matchingSongs !== null ? matchingSongs.length : ""}</h4> */}
-
                     <ul className={style.search_results_list}>
                         {matchingSongs !== null ? matchingSongs.map(song => (
                             <li key={song.id} className={style.search_results_list_item}>

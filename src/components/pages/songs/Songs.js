@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment} from "react";
 
 import style from "./assets/Songs.module.scss";
 

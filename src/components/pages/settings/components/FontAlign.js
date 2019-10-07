@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext} from "react";
 import SettingsContext from "../../../../context/settings/settingsContext";
 
 import style from "./assets/FontAlign.module.scss";
@@ -6,7 +6,6 @@ import style from "./assets/FontAlign.module.scss";
 const FontAlign = () => {
     const settingsContext = useContext(SettingsContext);
     const {setFontAlign, fontAlign} = settingsContext;
-
 
     const onChange = (option) => {
         setFontAlign(option);

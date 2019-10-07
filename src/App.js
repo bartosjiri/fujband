@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import {Router, Route, Switch} from "react-router-dom";
 import {createBrowserHistory} from "history";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 
-import './App.css';
+import "./App.css";
 import "./components/layout/themes/Themes.css";
 
 import SettingsState from "./context/settings/SettingsState";

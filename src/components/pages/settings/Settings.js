@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useState} from "react";
 
 import style from "./assets/Settings.module.scss";
 
@@ -78,7 +78,6 @@ const Settings = () => {
                 <Preview></Preview>
             </Content>    
         </Fragment>
-        
     );
 };
 
