@@ -25,7 +25,7 @@ const Search = () => {
     });
 
     const onChange = (e) => {
-        if(text.current.value !== "") {
+        if (text.current.value !== "") {
             searchSongs(e.target.value);
         } else {
             clearSearchSongs();
@@ -53,9 +53,8 @@ const Search = () => {
                         >
                         </input>
                         <div 
-                            className={style.search_actions_input_clear}
+                            className={style.search_actions_input_clear + " " + ((matchingSongs === null) ? style.search_actions_input_clear_inactive : "")}
                             onClick={() => clearSearchSongs()}
-                            style={{opacity: matchingSongs === null ? " 0" : "1"}}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172" fill="#ffffff"><path d="M43.78385,28.66667c-4.91035,0 -9.56365,2.57826 -12.16374,6.73275l-31.62012,50.60059l31.63411,50.60059c2.60009,4.15449 7.2396,6.73275 12.14974,6.73275h106.71615c7.84216,0 14.33333,-6.49117 14.33333,-14.33333v-86c0,-7.84216 -6.49117,-14.33333 -14.33333,-14.33333zM43.76986,43h0.014h106.71615v86h-106.71615l-26.889,-43zM69.56706,52.26628l-10.13411,10.13411l23.59961,23.59961l-23.59961,23.59961l10.13411,10.13411l23.59961,-23.59961l23.59961,23.59961l10.13411,-10.13411l-23.59961,-23.59961l23.59961,-23.59961l-10.13411,-10.13411l-23.59961,23.59961z"></path></svg>                        </div>
                     </div>
