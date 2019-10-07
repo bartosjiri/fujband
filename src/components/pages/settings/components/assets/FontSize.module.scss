@@ -23,11 +23,10 @@
     height: 3.4rem;
 
     .fontsize_list_item {
-      @include fluid("font-size", 16, 24);
-      vertical-align: middle;
       cursor: pointer;
       opacity: 0.4;
       line-height: 3.4rem;
+      padding: 0 1rem;
 
       // Experimental solution (removes sticky hover effect after click on mobile devices)
       @media not all and (pointer: coarse) {
