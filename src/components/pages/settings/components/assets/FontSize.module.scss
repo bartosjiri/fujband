@@ -29,10 +29,13 @@
       opacity: 0.4;
       line-height: 3.4rem;
 
-      &:hover {
-        opacity: 1;
+      // Experimental solution (removes sticky hover effect after click on mobile devices)
+      @media not all and (pointer: coarse) {
+        &:hover {
+          opacity: 1;
+        }
       }
-
+      
       svg {
         fill: var(--text-primary);
         @include fluid("width", 20, 28);
