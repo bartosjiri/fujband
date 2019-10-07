@@ -5,45 +5,47 @@
   padding: 4rem;
   @include fluid("padding-top", 20, 40);
   @include fluid("padding-bottom", 20, 40);
-}
 
   .fontsize_selection_title {
     @include fluid("font-size", 16, 20);
     text-align: center;
   }
 
-.fontsize_list {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 80%;
-  margin: 6rem auto;
-  @include fluid("margin-top", 10, 20);
-  @include fluid("margin-bottom", 10, 20);
-  @include fluid("padding-top", 10, 30);
-  height: 3.4rem;
-}
+  .fontsize_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 80%;
+    margin: 6rem auto;
+    @include fluid("margin-top", 10, 20);
+    @include fluid("margin-bottom", 10, 20);
+    @include fluid("padding-top", 10, 30);
+    height: 3.4rem;
 
-  .fontsize_list_item {
-    @include fluid("font-size", 16, 24);
-    vertical-align: middle;
-    cursor: pointer;
-    opacity: 0.4;
-    line-height: 3.4rem;
-  }
-
-    .fontsize_list_item:hover {
-      opacity: 1;
-    }
-
-    .fontsize_list_item svg {
-      fill: var(--text-basic);
-      @include fluid("width", 20, 28);
-      @include fluid("height", 20, 28);
+    .fontsize_list_item {
+      @include fluid("font-size", 16, 24);
       vertical-align: middle;
+      cursor: pointer;
+      opacity: 0.4;
+      line-height: 3.4rem;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      svg {
+        fill: var(--text-primary);
+        @include fluid("width", 20, 28);
+        @include fluid("height", 20, 28);
+        vertical-align: middle;
+      }
     }
 
     .fontsize_list_item_disabled {
       opacity: 0;
       pointer-events: none;
     }
+  }
+}
+
+    

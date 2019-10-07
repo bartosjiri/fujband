@@ -6,7 +6,7 @@ import SongsContext from "../../../../context/songs/songsContext";
 import Topbar from "../../../layout/Topbar";
 import Content from "../../../layout/Content";
 
-import style from "./assets/Song.module.css";
+import style from "./assets/Song.module.scss";
 
 import NotFound from "../../util/NotFound";
 

@@ -7,38 +7,38 @@
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
+
+  svg {
+    fill: var(--text-secondary);
+    @include fluid("width", 128, 256);
+    @include fluid("height", 128, 256);
+    @include fluid("margin-bottom", 20, 40);
+  }
+
+  h1 {
+    @include fluid("font-size", 20, 36);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    @include fluid("margin-bottom", 40, 80);
+  }
+
+  a {
+    display: inline-block;
+    padding: 3rem 4rem;
+    @include fluid("padding", 24, 40);
+    color: var(--text-primary);
+    background: var(--background-hover);
+    border-radius: 0.4rem;
+    outline: none;
+    @include fluid("font-size", 18, 26);
+    text-decoration: none;
+    width: calc(100% - 8rem);
+    opacity: 0.8;
+    text-align: center;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
-
-    .NotFound svg {
-      fill: var(--text-alternative);
-      @include fluid("width", 128, 256);
-      @include fluid("height", 128, 256);
-      @include fluid("margin-bottom", 20, 40);
-    }
-
-    .NotFound h1 {
-      @include fluid("font-size", 20, 36);
-      color: var(--text-alternative);
-      text-transform: uppercase;
-      font-weight: 600;
-      @include fluid("margin-bottom", 40, 80);
-    }
-
-    .NotFound a {
-      display: inline-block;
-      padding: 3rem 4rem;
-      @include fluid("padding", 24, 40);
-      color: var(--text-basic);
-      background: var(--background-hover);
-      border-radius: 0.4rem;
-      outline: none;
-      @include fluid("font-size", 18, 26);
-      text-decoration: none;
-      width: calc(100% - 8rem);
-      opacity: 0.8;
-      text-align: center;
-    }
-
-      .NotFound a:hover {
-        opacity: 1;
-      }
