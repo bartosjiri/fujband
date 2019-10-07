@@ -10,6 +10,8 @@
     padding: 6rem 4rem;
     @include fluid("padding-top", 30, 60);
     @include fluid("padding-bottom", 20, 60);
+    @include fluid("padding-left", 20, 40);
+    @include fluid("padding-right", 20, 40);
 
     .Topbar_header_title {
       grid-column-start: 1;

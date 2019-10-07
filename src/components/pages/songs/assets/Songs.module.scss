@@ -4,4 +4,6 @@
   padding: 4rem;
   @include fluid("padding-top", 0, 40);
   @include fluid("padding-bottom", 0, 40);
+  @include fluid("padding-left", 20, 40);
+  @include fluid("padding-right", 20, 40);
 }
