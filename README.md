@@ -19,3 +19,6 @@ Any fixes, updates and improvements are welcome, however, when contributing to t
 
 ## Acknowledgments
 Visuals partially inspired by Josué Goes' *[App | Music Lyric | Interface](https://www.behance.net/gallery/68858731/App-Music-Lyric-Interface)* design.
+
+## License
+Licensed under the [MIT License](https://github.com/bartosjiri/fujband/blob/master/LICENSE.md).
