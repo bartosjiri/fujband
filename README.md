@@ -2,7 +2,7 @@
 
 Lyrics single-page application for a local folklore band. Built for easier engagement during band's public performances.
 
-![FUJBand application](https://i.imgur.com/JWRX3jg.png)
+![FUJBand application](https://i.imgur.com/JaProfL.png)
 
 This repository contains the client part of the application - data and administration are provided through separate project.
 
