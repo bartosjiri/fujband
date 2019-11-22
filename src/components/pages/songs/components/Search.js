@@ -15,6 +15,7 @@ const Search = () => {
 
     useEffect(() => {
         clearSearchSongs();
+        text.current.focus();
         // eslint-disable-next-line
     }, []);
 
