@@ -1,0 +1,72 @@
+@import "../../../../layout/styles/fluid.scss";
+
+.loader {
+  display: flex;
+  justify-content: center;
+  @include fluid("padding-top", 32, 64);
+  @include fluid("padding-bottom", 32, 64);
+
+  .loader_object {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 11;
+      top: 0;
+      left: -100%;
+      width: 450px;
+      height: 200px;
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      transform: rotate(45deg);
+    }
+
+    @keyframes loading {
+      0% {
+        background-position: right;
+      }
+    }
+  }
+}
+
+html,
+html[data-theme="dark"] {
+  .loader {
+    .loader_object {
+      background: url("../../../../../media/home/pattern/dark/bg60.png");
+      background-size: cover;
+
+      &:after {
+        background-image: linear-gradient(
+          to right,
+          var(--background-primary) 33%,
+          transparent 50%,
+          var(--background-primary) 66%
+        );
+      }
+    }
+  }
+}
+
+html[data-theme="light"] {
+  .loader {
+    .loader_object {
+      background: url("../../../../../media/home/pattern/light/bg80.png");
+      background-size: cover;
+
+      &:after {
+        background-image: linear-gradient(
+          to right,
+          var(--background-primary) 33%,
+          transparent 50%,
+          var(--background-primary) 66%
+        );
+      }
+    }
+  }
+}

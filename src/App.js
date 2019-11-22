@@ -16,7 +16,7 @@ import Song from "./components/pages/songs/components/Song";
 import Search from "./components/pages/songs/components/Search";
 import Settings from "./components/pages/settings/Settings";
 import About from "./components/pages/about/About";
-import NotFound from "./components/pages/util/NotFound";
+import NotFound from "./components/pages/util/not-found/NotFound";
 
 const history = createBrowserHistory();
 ReactGA.initialize("UA-103619462-3");
