@@ -1,11 +1,11 @@
 @import "../../../styles/fluid.scss";
 
 /* Topbar */
-.Topbar {
+.topbar {
   background: var(--background-primary);
   color: var(--text-primary);
 
-  .Topbar_header {
+  .header {
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 6rem 4rem;
@@ -14,7 +14,7 @@
     @include fluid("padding-left", 20, 40);
     @include fluid("padding-right", 20, 40);
 
-    .Topbar_header_title {
+    .header_title {
       grid-column-start: 1;
       grid-column-end: 1;
 
@@ -23,7 +23,7 @@
       }
     }
 
-    .Topbar_header_button {
+    .header_button {
       grid-column-start: 2;
       grid-column-end: 2;
       margin-left: 4rem;

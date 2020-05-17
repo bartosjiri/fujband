@@ -1,7 +1,7 @@
 @import "../../../styles/fluid.scss";
 
 /* Songs */
-.songlist {
+.songs {
   padding: 4rem;
   @include fluid("padding-top", 0, 40);
   @include fluid("padding-bottom", 0, 40);

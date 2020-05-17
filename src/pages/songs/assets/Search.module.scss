@@ -1,11 +1,11 @@
 @import "../../../styles/fluid.scss";
 
-.search_actions {
+.actions {
   padding: 0 4rem;
   @include fluid("padding-left", 20, 40);
   @include fluid("padding-right", 20, 40);
 
-  .search_actions_input {
+  .actions_input {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 4rem;
@@ -28,7 +28,7 @@
       width: 100%;
     }
 
-    .search_actions_input_icon {
+    .actions_input_icon {
       align-self: end;
       opacity: 0.6;
 
@@ -39,7 +39,7 @@
       }
     }
 
-    .search_actions_input_text {
+    .actions_input_text {
       align-self: center;
       background: transparent;
       outline: none;
@@ -48,7 +48,7 @@
       @include fluid("font-size", 18, 26);
     }
 
-    .search_actions_input_clear {
+    .actions_input_clear {
       align-self: center;
 
       svg {
@@ -63,20 +63,20 @@
       }
     }
 
-    .search_actions_input_clear_inactive {
+    .actions_input_clear_inactive {
       opacity: 0;
       pointer-events: none;
     }
   }
 }
 
-.search_results {
+.results {
   padding: 4rem;
   @include fluid("padding-left", 20, 40);
   @include fluid("padding-right", 20, 40);
 
-  .search_results_list {
-    .search_results_list_item {
+  .results_list {
+    .results_list_item {
       @include fluid("font-size", 16, 24);
       line-height: 2;
       border-bottom: 1px solid var(--background-divider);

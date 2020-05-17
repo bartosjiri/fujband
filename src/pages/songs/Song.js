@@ -6,7 +6,7 @@ import SongsContext from "../../context/songs/songsContext";
 import Topbar from "../../layout/topbar/Topbar";
 import Content from "../../layout/content/Content";
 
-import style from "./assets/Song.module.scss";
+import songStyle from "./assets/Song.module.scss";
 
 import NotFound from "../not-found/NotFound";
 
@@ -30,7 +30,7 @@ const Song = (props) => {
           <Content>
             <div
               name="lyrics"
-              className={style.song}
+              className={songStyle.song}
               style={{
                 fontSize: fontSize,
                 lineHeight: fontLine,

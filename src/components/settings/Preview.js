@@ -2,17 +2,17 @@ import React, {useContext} from "react";
 
 import SettingsContext from "../../context/settings/settingsContext";
 
-import style from "./assets/Preview.module.scss";
+import previewStyle from "./assets/Preview.module.scss";
 
 const Preview = () => {
   const settingsContext = useContext(SettingsContext);
   const {fontSize, fontLine, fontAlign} = settingsContext;
 
   return (
-    <div className={style.settings_preview}>
-      <h4 className={style.settings_preview_title}>Náhled textu</h4>
+    <div className={previewStyle.preview}>
+      <h4 className={previewStyle.preview_title}>Náhled textu</h4>
       <div
-        className={style.settings_preview_content}
+        className={previewStyle.preview_content}
         style={{
           fontSize: fontSize,
           lineHeight: fontLine,

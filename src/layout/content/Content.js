@@ -1,10 +1,10 @@
 import React from "react";
 
-import style from "./assets/Content.module.scss";
+import contentStyle from "./assets/Content.module.scss";
 
 const Content = (props) => {
   return (
-    <section className={style.Content}>
+    <section className={contentStyle.content}>
       {props.children}
     </section>
   );

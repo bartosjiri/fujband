@@ -15,12 +15,12 @@
 // 	position: sticky;
 // }
 
-.settings_navigation {
+.navigation {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	width: 100%;
 
-	.settings_navigation_item {
+	.navigation_item {
 		text-align: center;
 		padding: 3rem 0;
 		@include fluid("padding-top", 22, 30);
@@ -40,7 +40,7 @@
 		}
 	}
 
-	.settings_navigation_item_active {
+	.navigation_item_active {
 		background: var(--background-highlight);
 
 		svg {

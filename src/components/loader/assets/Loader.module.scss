@@ -1,12 +1,13 @@
 @import "../../../../layout/styles/fluid.scss";
 
+/* Loader */
 .loader {
   display: flex;
   justify-content: center;
   @include fluid("padding-top", 32, 64);
   @include fluid("padding-bottom", 32, 64);
 
-  .loader_object {
+  .animation {
     width: 150px;
     height: 150px;
     position: relative;
@@ -37,7 +38,7 @@
 html,
 html[data-theme="dark"] {
   .loader {
-    .loader_object {
+    .animation {
       background: url("../../../../../media/home/pattern/dark/bg60.png");
       background-size: cover;
 
@@ -55,7 +56,7 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   .loader {
-    .loader_object {
+    .animation {
       background: url("../../../../../media/home/pattern/light/bg80.png");
       background-size: cover;
 

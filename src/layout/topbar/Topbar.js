@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 
-import style from "./assets/Topbar.module.scss";
+import topbarStyle from "./assets/Topbar.module.scss";
 
 import SongsContext from "../../context/songs/songsContext";
 
@@ -10,12 +10,12 @@ const Topbar = (props) => {
   const {clearCurrentSong} = songsContext;
 
   return (
-    <section className={style.Topbar}>
-      <header className={style.Topbar_header}>
-        <div className={style.Topbar_header_title}>
+    <section className={topbarStyle.topbar}>
+      <header className={topbarStyle.header}>
+        <div className={topbarStyle.header_title}>
           <h2>{props.title}</h2>
         </div>
-        <div className={style.Topbar_header_button}>
+        <div className={topbarStyle.header_button}>
           {
             props.closeLink ? (
               <Link
