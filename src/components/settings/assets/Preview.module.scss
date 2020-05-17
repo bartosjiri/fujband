@@ -1,0 +1,18 @@
+@import "../../../styles/fluid.scss";
+
+/* Preview */
+.settings_preview {	
+	padding: 4rem;
+	@include fluid("padding-left", 20, 40);
+	@include fluid("padding-right", 20, 40);
+
+	.settings_preview_title {
+		@include fluid("font-size", 16, 20);
+		margin-bottom: 2rem;
+		opacity: 0.8;
+	}
+
+	.settings_preview_content {
+		transition: all 0.25s;
+	}
+}

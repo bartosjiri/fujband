@@ -1,0 +1,43 @@
+@import "../../../styles/fluid.scss";
+
+/* Topbar */
+.Topbar {
+  background: var(--background-primary);
+  color: var(--text-primary);
+
+  .Topbar_header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 6rem 4rem;
+    @include fluid("padding-top", 30, 60);
+    @include fluid("padding-bottom", 20, 60);
+    @include fluid("padding-left", 20, 40);
+    @include fluid("padding-right", 20, 40);
+
+    .Topbar_header_title {
+      grid-column-start: 1;
+      grid-column-end: 1;
+
+      h2 {
+        @include fluid("font-size", 22, 32);
+      }
+    }
+
+    .Topbar_header_button {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      margin-left: 4rem;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      a svg {
+        fill: var(--text-primary);
+        @include fluid("width", 22, 28);
+        @include fluid("height", 22, 28);
+      }
+    }
+  }
+}

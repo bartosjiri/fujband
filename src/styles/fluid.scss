@@ -1,0 +1,13 @@
+/* Fluid */
+$displayWide: 1280;
+$displayNarrow: 375;
+
+@mixin fluid($property, $minValue, $maxValue) {
+  $x: ($maxValue - $minValue)/($displayWide - $displayNarrow);
+  $y: $maxValue - $displayWide * $x;
+  #{$property}: calc(#{100*$x}vw + #{$y}px);
+
+  @media screen and (min-width: ($displayWide + 1px)) {
+    #{$property}: #{$maxValue}px
+  };
+}

@@ -1,0 +1,37 @@
+@import "../../../styles/fluid.scss";
+
+/* Songs */
+.songlist {
+  padding: 4rem;
+  @include fluid("padding-top", 0, 40);
+  @include fluid("padding-bottom", 0, 40);
+  @include fluid("padding-left", 20, 40);
+  @include fluid("padding-right", 20, 40);
+}
+
+.songs_list {
+  .songs_list_item {
+    @include fluid("font-size", 16, 24);
+    line-height: 2;
+    border-bottom: 1px solid var(--background-divider);
+    width: 100%;
+    display: flex;
+    
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: var(--background-hover);
+    }
+
+    a {
+      padding: 1rem 0;
+      @include fluid("padding-top", 6, 10);
+      @include fluid("padding-bottom", 6, 10);
+      text-decoration: none;
+      color: var(--text-primary);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../styles/fluid.scss";
+
+/* Settings */
+// .header {
+// 	padding: 4rem;
+
+// 	h2 {
+// 		font-size: 3.2rem;
+// 	}
+// }
+
+// .settings {
+// 	display: grid;
+// 	grid-template-rows: auto auto auto;
+// 	position: sticky;
+// }
+
+.settings_navigation {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 100%;
+
+	.settings_navigation_item {
+		text-align: center;
+		padding: 3rem 0;
+		@include fluid("padding-top", 22, 30);
+		@include fluid("padding-bottom", 22, 30);
+		cursor: pointer;
+
+		svg {
+			fill: var(--text-secondary);
+			@include fluid("width", 20, 28);
+			@include fluid("height", 20, 28);
+		}
+
+		&:hover {
+			svg {
+				fill: var(--text-primary);
+			}
+		}
+	}
+
+	.settings_navigation_item_active {
+		background: var(--background-highlight);
+
+		svg {
+			fill: var(--text-primary);
+		}
+	}
+}
