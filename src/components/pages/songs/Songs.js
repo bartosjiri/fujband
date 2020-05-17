@@ -8,19 +8,19 @@ import Content from "../../layout/Content";
 import All from "./components/All";
 
 const Songs = () => {
-    return (
-        <Fragment>
-            <Topbar title="Seznam skladeb" searchLink="/songs/search"></Topbar>
-            <Content>
-                <div
-                    name="songlist"
-                    className={style.songlist}
-                >
-                    <All></All>
-                </div>
-            </Content>        
-        </Fragment>    
-    )
+  return (
+    <Fragment>
+      <Topbar title="Seznam skladeb" searchLink="/songs/search"></Topbar>
+      <Content>
+        <div
+          name="songlist"
+          className={style.songlist}
+        >
+          <All></All>
+        </div>
+      </Content>
+    </Fragment>
+  )
 };
 
 export default Songs;

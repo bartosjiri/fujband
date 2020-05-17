@@ -21,30 +21,30 @@ import NotFound from "./components/pages/util/not-found/NotFound";
 const history = createBrowserHistory();
 ReactGA.initialize("UA-103619462-3");
 history.listen((location) => {
-    ReactGA.pageview(location.pathname + location.search);
+  ReactGA.pageview(location.pathname + location.search);
 });
 
 const App = () => {
-    return (
-        <SettingsState>
-            <SongsState>
-                <Router history={history}>
-                    <main>
-                        <Switch>
-                            <Route path="/" exact component={Home}></Route>
-                            <Route path="/songs" exact component={Songs}></Route>
-                            <Route path="/songs/search" exact component={Search}></Route>
-                            <Route path="/songs/:slug" exact component={Song}></Route>
-                            <Route path="/settings" exact component={Settings}></Route>
-                            <Route path="/about" exact component={About}></Route>
-                            <Route component={NotFound}></Route>
-                        </Switch>
-                        <Navbar></Navbar>
-                    </main>
-                </Router>
-            </SongsState>     
-        </SettingsState>
-    );
+  return (
+    <SettingsState>
+      <SongsState>
+        <Router history={history}>
+          <main>
+            <Switch>
+              <Route path="/" exact component={Home}></Route>
+              <Route path="/songs" exact component={Songs}></Route>
+              <Route path="/songs/search" exact component={Search}></Route>
+              <Route path="/songs/:slug" exact component={Song}></Route>
+              <Route path="/settings" exact component={Settings}></Route>
+              <Route path="/about" exact component={About}></Route>
+              <Route component={NotFound}></Route>
+            </Switch>
+            <Navbar></Navbar>
+          </main>
+        </Router>
+      </SongsState>
+    </SettingsState>
+  );
 }
 
 export default App;
