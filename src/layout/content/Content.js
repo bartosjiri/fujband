@@ -2,10 +2,10 @@ import React from "react";
 
 import contentStyle from "./assets/Content.module.scss";
 
-const Content = (props) => {
+const Content = ({children}) => {
   return (
     <section className={contentStyle.content}>
-      {props.children}
+      {children}
     </section>
   );
 };

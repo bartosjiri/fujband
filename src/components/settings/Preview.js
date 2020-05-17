@@ -14,7 +14,7 @@ const Preview = () => {
       <div
         className={previewStyle.preview_content}
         style={{
-          fontSize: fontSize,
+          fontSize,
           lineHeight: fontLine,
           textAlign: fontAlign
         }}

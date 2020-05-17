@@ -21,7 +21,7 @@ const Songs = () => {
           className={songsStyle.songs}
         >
           <ul className={songsStyle.songs_list}>
-            {songs
+            {songs && songs
               .sort((a, b) => a.title.localeCompare(b.title, "cs"))
               .map(song => (
                 <li key={song.id} className={songsStyle.songs_list_item}>
