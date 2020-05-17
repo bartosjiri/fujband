@@ -24,20 +24,33 @@
     height: 3.4rem;
 
     .options_item {
-      @include fluid("font-size", 16, 24);
-      vertical-align: middle;
       cursor: pointer;
       opacity: 0.4;
       line-height: 3.4rem;
       padding: 0 1rem;
 
-      &:hover {
-        opacity: 1;
+      // Experimental solution (removes sticky hover effect after click on mobile devices)
+      @media not all and (pointer: coarse) {
+        &:hover {
+          opacity: 1;
+        }
+      }
+      
+      svg {
+        fill: var(--text-primary);
+        @include fluid("width", 20, 28);
+        @include fluid("height", 20, 28);
+        vertical-align: middle;
       }
     }
 
-    .options_item_active {
-      opacity: 1;
+    .options_item_disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .options_display {
+      @include fluid("font-size", 16, 24);
     }
   }
 }

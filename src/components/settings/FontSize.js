@@ -32,6 +32,12 @@ const FontSize = () => {
           </svg>
         </li>
         <li
+          name="display"
+          className={fontSizeStyle.options_display}
+        >
+          {fontSize}
+        </li>
+        <li
           name="increase"
           onClick={() => onChange(fontSize + step)}
           className={`${fontSizeStyle.options_item} ${fontSize >= maxValue && fontSizeStyle.options_item_disabled}`}

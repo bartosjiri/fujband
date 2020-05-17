@@ -48,6 +48,10 @@
       opacity: 0;
       pointer-events: none;
     }
+
+    .options_display {
+      @include fluid("font-size", 16, 24);
+    }
   }
 }
 
