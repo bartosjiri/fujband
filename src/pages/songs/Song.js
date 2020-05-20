@@ -1,4 +1,5 @@
 import React, {Fragment, useContext, useEffect} from 'react'
+import PropTypes from 'prop-types'
 
 import SettingsContext from '../../context/settings/settingsContext'
 import SongsContext from '../../context/songs/songsContext'
@@ -19,8 +20,7 @@ const Song = ({match}) => {
 
   useEffect(() => {
     setCurrentSong(match.params.slug)
-    // eslint-disable-next-line
-  }, []);
+  }, [])
 
   return (
     <Fragment>
@@ -49,6 +49,14 @@ const Song = ({match}) => {
         )}
     </Fragment>
   )
+}
+
+Song.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      slug: PropTypes.string,
+    }),
+  }).isRequired
 }
 
 export default Song

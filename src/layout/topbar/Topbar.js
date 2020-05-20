@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 
 import topbarStyle from './assets/Topbar.module.scss'
@@ -39,6 +40,13 @@ const Topbar = ({
       {children}
     </section>
   )
+}
+
+Topbar.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  closeLink: PropTypes.string,
+  searchLink: PropTypes.string
 }
 
 export default Topbar

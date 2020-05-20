@@ -1,4 +1,5 @@
 import React, {useReducer} from 'react'
+import PropTypes from 'prop-types'
 import SongsContext from './songsContext'
 import songsReducer from './songsReducer'
 import {
@@ -8,7 +9,7 @@ import {
   SONGS_SEARCH_CLEAR
 } from '../types'
 
-import songsData from '../../media/songs/songsData'
+import {songsData} from '../../media/songs/songsData'
 
 const SongsState = ({children}) => {
   const initialState = {
@@ -19,22 +20,18 @@ const SongsState = ({children}) => {
 
   const [state, dispatch] = useReducer(songsReducer, initialState)
 
-  // Set current song
   const setCurrentSong = (id) => {
     dispatch({type: SONGS_CURRENT, payload: id})
   }
 
-  // Clear current song
   const clearCurrentSong = () => {
     dispatch({type: SONGS_CURRENT_CLEAR})
   }
 
-  // Search songs
   const searchSongs = (text) => {
     dispatch({type: SONGS_SEARCH, payload: text})
   }
 
-  // Clear songs search
   const clearSearchSongs = () => {
     dispatch({type: SONGS_SEARCH_CLEAR})
   }
@@ -54,6 +51,10 @@ const SongsState = ({children}) => {
       {children}
     </SongsContext.Provider>
   )
+}
+
+SongsState.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default SongsState

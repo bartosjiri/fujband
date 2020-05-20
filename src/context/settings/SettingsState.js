@@ -1,4 +1,5 @@
 import React, {useReducer, useEffect} from 'react'
+import PropTypes from 'prop-types'
 import SettingsContext from './settingsContext'
 import settingsReducer from './settingsReducer'
 import {
@@ -82,6 +83,10 @@ const SettingsState = ({children}) => {
       {children}
     </SettingsContext.Provider>
   )
+}
+
+SettingsState.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default SettingsState
