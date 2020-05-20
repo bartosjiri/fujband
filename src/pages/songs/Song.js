@@ -1,24 +1,24 @@
-import React, {Fragment, useContext, useEffect} from "react";
+import React, {Fragment, useContext, useEffect} from 'react'
 
-import SettingsContext from "../../context/settings/settingsContext";
-import SongsContext from "../../context/songs/songsContext";
+import SettingsContext from '../../context/settings/settingsContext'
+import SongsContext from '../../context/songs/songsContext'
 
-import Topbar from "../../layout/topbar/Topbar";
-import Content from "../../layout/content/Content";
+import Topbar from '../../layout/topbar/Topbar'
+import Content from '../../layout/content/Content'
 
-import songStyle from "./assets/Song.module.scss";
+import songStyle from './assets/Song.module.scss'
 
-import NotFound from "../not-found/NotFound";
+import NotFound from '../not-found/NotFound'
 
 const Song = ({match}) => {
-  const settingsContext = useContext(SettingsContext);
-  const {fontSize, fontLine, fontAlign} = settingsContext;
+  const settingsContext = useContext(SettingsContext)
+  const {fontSize, fontLine, fontAlign} = settingsContext
 
-  const songsContext = useContext(SongsContext);
-  const {currentSong, setCurrentSong} = songsContext;
+  const songsContext = useContext(SongsContext)
+  const {currentSong, setCurrentSong} = songsContext
 
   useEffect(() => {
-    setCurrentSong(match.params.slug);
+    setCurrentSong(match.params.slug)
     // eslint-disable-next-line
   }, []);
 
@@ -27,7 +27,7 @@ const Song = ({match}) => {
       {currentSong
         ? (
           <Fragment>
-            <Topbar title={currentSong.title} closeLink="/songs"></Topbar>
+            <Topbar title={currentSong.title} closeLink="/songs" />
             <Content>
               <div
                 name="lyrics"
@@ -39,16 +39,16 @@ const Song = ({match}) => {
                 }}
               >
                 {/* Preferably find other way to provide song lyrics bellow */}
-                <div dangerouslySetInnerHTML={{__html: currentSong.text}}></div>
+                {/* eslint-disable-next-line react/no-danger */}
+                <div dangerouslySetInnerHTML={{__html: currentSong.text}} />
               </div>
             </Content>
-          </Fragment >
+          </Fragment>
         ) : (
-          <NotFound></NotFound>
-        )
-      }
+          <NotFound />
+        )}
     </Fragment>
-  );
-};
+  )
+}
 
-export default Song;
+export default Song

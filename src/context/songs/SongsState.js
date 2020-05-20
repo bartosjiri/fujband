@@ -1,44 +1,43 @@
-import React, {useReducer} from "react";
-import SongsContext from "./songsContext";
-import songsReducer from "./songsReducer";
+import React, {useReducer} from 'react'
+import SongsContext from './songsContext'
+import songsReducer from './songsReducer'
 import {
   SONGS_CURRENT,
   SONGS_CURRENT_CLEAR,
   SONGS_SEARCH,
   SONGS_SEARCH_CLEAR
-} from "../types";
+} from '../types'
 
+import songsData from '../../media/songs/songsData'
 
-import songsData from "./../../media/songs/songsData";
-
-const SongsState = (props) => {
+const SongsState = ({children}) => {
   const initialState = {
     songs: songsData,
     currentSong: {},
     matchingSongs: null
-  };
+  }
 
-  const [state, dispatch] = useReducer(songsReducer, initialState);
+  const [state, dispatch] = useReducer(songsReducer, initialState)
 
   // Set current song
   const setCurrentSong = (id) => {
-    dispatch({type: SONGS_CURRENT, payload: id});
-  };
+    dispatch({type: SONGS_CURRENT, payload: id})
+  }
 
   // Clear current song
   const clearCurrentSong = () => {
-    dispatch({type: SONGS_CURRENT_CLEAR});
-  };
+    dispatch({type: SONGS_CURRENT_CLEAR})
+  }
 
   // Search songs
   const searchSongs = (text) => {
-    dispatch({type: SONGS_SEARCH, payload: text});
-  };
+    dispatch({type: SONGS_SEARCH, payload: text})
+  }
 
   // Clear songs search
   const clearSearchSongs = () => {
-    dispatch({type: SONGS_SEARCH_CLEAR});
-  };
+    dispatch({type: SONGS_SEARCH_CLEAR})
+  }
 
   return (
     <SongsContext.Provider
@@ -52,9 +51,9 @@ const SongsState = (props) => {
         clearSearchSongs
       }}
     >
-      {props.children}
+      {children}
     </SongsContext.Provider>
-  );
-};
+  )
+}
 
-export default SongsState;
+export default SongsState

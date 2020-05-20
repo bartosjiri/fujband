@@ -38,9 +38,10 @@
         ]
       }
     ],
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
+    "react/jsx-fragments": "off",
     "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "semi": [
       2,

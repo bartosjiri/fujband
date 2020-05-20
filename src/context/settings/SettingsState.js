@@ -1,70 +1,70 @@
-import React, {useReducer, useEffect} from "react";
-import SettingsContext from "./settingsContext";
-import settingsReducer from "./settingsReducer";
+import React, {useReducer, useEffect} from 'react'
+import SettingsContext from './settingsContext'
+import settingsReducer from './settingsReducer'
 import {
   SETTINGS_FONT_SIZE,
   SETTINGS_FONT_LINE,
   SETTINGS_FONT_ALIGN,
   SETTINGS_THEME
-} from "../types";
+} from '../types'
 
-const SettingsState = props => {
+const SettingsState = ({children}) => {
   const initialState = {
     fontSize: 16,
     fontLine: 1.5,
-    fontAlign: "left",
-    theme: "dark"
-  };
+    fontAlign: 'left',
+    theme: 'dark'
+  }
 
-  useEffect(() => {
-    const storedFontSize = localStorage.getItem("fontSize");
-    const storedFontLine = localStorage.getItem("fontLine");
-    const storedFontAlign = localStorage.getItem("fontAlign");
-    const storedTheme = localStorage.getItem("theme");
-
-    if (storedFontSize !== null) {
-      setFontSize(Number(storedFontSize));
-    };
-    if (storedFontLine !== null) {
-      setFontLine(Number(storedFontLine));
-    };
-    if (storedFontAlign !== null) {
-      setFontAlign(storedFontAlign);
-    };
-    if (storedTheme !== null) {
-      setTheme(storedTheme);
-    };
-  }, []);
-
-  const [state, dispatch] = useReducer(settingsReducer, initialState);
+  const [state, dispatch] = useReducer(settingsReducer, initialState)
 
   const setFontSize = fontSize => {
-    dispatch({type: SETTINGS_FONT_SIZE, payload: fontSize});
-  };
+    dispatch({type: SETTINGS_FONT_SIZE, payload: fontSize})
+  }
 
   const setFontLine = fontLine => {
-    dispatch({type: SETTINGS_FONT_LINE, payload: fontLine});
-  };
+    dispatch({type: SETTINGS_FONT_LINE, payload: fontLine})
+  }
 
   const setFontAlign = fontAlign => {
-    dispatch({type: SETTINGS_FONT_ALIGN, payload: fontAlign});
-  };
+    dispatch({type: SETTINGS_FONT_ALIGN, payload: fontAlign})
+  }
 
   const setTheme = theme => {
-    dispatch({type: SETTINGS_THEME, payload: theme});
+    dispatch({type: SETTINGS_THEME, payload: theme})
 
-    document.documentElement.classList.add('theme-transition');
-    document.documentElement.setAttribute("data-theme", theme);
-    window.setTimeout(function () {
+    document.documentElement.classList.add('theme-transition')
+    document.documentElement.setAttribute('data-theme', theme)
+    window.setTimeout(() => {
       document.documentElement.classList.remove('theme-transition')
-    }, 275);
+    }, 275)
 
-    if (theme === "dark") {
-      document.querySelector("meta[name=theme-color]").setAttribute("content", "#121212");
+    if (theme === 'dark') {
+      document.querySelector('meta[name=theme-color]').setAttribute('content', '#121212')
     } else {
-      document.querySelector("meta[name=theme-color]").setAttribute("content", "#f8f8f8");
+      document.querySelector('meta[name=theme-color]').setAttribute('content', '#f8f8f8')
     }
-  };
+  }
+
+  useEffect(() => {
+    const storedFontSize = localStorage.getItem('fontSize')
+    const storedFontLine = localStorage.getItem('fontLine')
+    const storedFontAlign = localStorage.getItem('fontAlign')
+    const storedTheme = localStorage.getItem('theme')
+
+    if (storedFontSize !== null) {
+      setFontSize(Number(storedFontSize))
+    }
+    if (storedFontLine !== null) {
+      setFontLine(Number(storedFontLine))
+    }
+    if (storedFontAlign !== null) {
+      setFontAlign(storedFontAlign)
+    }
+    if (storedTheme !== null) {
+      setTheme(storedTheme)
+    }
+  }, [])
 
   return (
     <SettingsContext.Provider
@@ -79,9 +79,9 @@ const SettingsState = props => {
         setTheme
       }}
     >
-      {props.children}
+      {children}
     </SettingsContext.Provider>
-  );
-};
+  )
+}
 
-export default SettingsState;
+export default SettingsState

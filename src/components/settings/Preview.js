@@ -1,12 +1,12 @@
-import React, {useContext} from "react";
+import React, {useContext} from 'react'
 
-import SettingsContext from "../../context/settings/settingsContext";
+import SettingsContext from '../../context/settings/settingsContext'
 
-import previewStyle from "./assets/Preview.module.scss";
+import previewStyle from './assets/Preview.module.scss'
 
 const Preview = () => {
-  const settingsContext = useContext(SettingsContext);
-  const {fontSize, fontLine, fontAlign} = settingsContext;
+  const settingsContext = useContext(SettingsContext)
+  const {fontSize, fontLine, fontAlign} = settingsContext
 
   return (
     <div className={previewStyle.preview}>
@@ -48,6 +48,6 @@ const Preview = () => {
       </div>
     </div>
   )
-};
+}
 
-export default Preview;
+export default Preview

@@ -1,19 +1,19 @@
-import React, {Fragment, useContext} from "react";
+import React, {Fragment, useContext} from 'react'
 
-import Topbar from "../../layout/topbar/Topbar";
-import Content from "../../layout/content/Content";
+import Topbar from '../../layout/topbar/Topbar'
+import Content from '../../layout/content/Content'
 
-import aboutStyle from "./assets/About.module.scss";
+import aboutStyle from './assets/About.module.scss'
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from '../../context/songs/songsContext'
 
 const About = () => {
-  const songsContext = useContext(SongsContext);
-  const {songs} = songsContext;
+  const songsContext = useContext(SongsContext)
+  const {songs} = songsContext
 
   return (
     <Fragment>
-      <Topbar title="O aplikaci"></Topbar>
+      <Topbar title="O aplikaci" />
       <Content>
         <div className={aboutStyle.fujband}>
           <h2 className={aboutStyle.about_subtitle}>FUJBand</h2>
@@ -68,6 +68,6 @@ const About = () => {
       </Content>
     </Fragment>
   )
-};
+}
 
-export default About;
+export default About

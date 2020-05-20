@@ -1,12 +1,12 @@
-import React, {useContext} from "react";
+import React, {useContext} from 'react'
 
-import SettingsContext from "../../context/settings/settingsContext";
+import SettingsContext from '../../context/settings/settingsContext'
 
-import fontLineStyle from "./assets/FontLine.module.scss";
+import fontLineStyle from './assets/FontLine.module.scss'
 
 const FontLine = () => {
-  const settingsContext = useContext(SettingsContext);
-  const {setFontLine, fontLine} = settingsContext;
+  const settingsContext = useContext(SettingsContext)
+  const {setFontLine, fontLine} = settingsContext
 
   const [minValue, maxValue] = [1, 2]
   const step = 0.05
@@ -14,10 +14,10 @@ const FontLine = () => {
   const onChange = (option) => {
     const optionParsed = Math.round((option + Number.EPSILON) * 100) / 100
     if (optionParsed >= minValue && optionParsed <= maxValue) {
-      setFontLine(optionParsed);
-      localStorage.setItem("fontLine", optionParsed);
+      setFontLine(optionParsed)
+      localStorage.setItem('fontLine', optionParsed)
     }
-  };
+  }
 
   return (
     <div className={fontLineStyle.selection}>
@@ -51,6 +51,6 @@ const FontLine = () => {
       </ul>
     </div>
   )
-};
+}
 
-export default FontLine;
+export default FontLine

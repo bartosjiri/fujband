@@ -1,15 +1,15 @@
-import React, {useContext} from "react";
-import {Link} from "react-router-dom";
+import React, {useContext} from 'react'
+import {Link} from 'react-router-dom'
 
-import homeStyle from "./assets/Home.module.scss";
+import homeStyle from './assets/Home.module.scss'
 
-import Content from "../../layout/content/Content";
+import Content from '../../layout/content/Content'
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from '../../context/songs/songsContext'
 
 const Home = () => {
-  const songsContext = useContext(SongsContext);
-  const {clearCurrentSong} = songsContext;
+  const songsContext = useContext(SongsContext)
+  const {clearCurrentSong} = songsContext
 
   return (
     <Content>
@@ -55,6 +55,6 @@ const Home = () => {
       </div>
     </Content>
   )
-};
+}
 
-export default Home;
+export default Home

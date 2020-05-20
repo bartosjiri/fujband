@@ -1,13 +1,13 @@
-import React, {useContext} from "react";
-import {NavLink} from "react-router-dom";
+import React, {useContext} from 'react'
+import {NavLink} from 'react-router-dom'
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from '../../context/songs/songsContext'
 
-import navbarStyle from "./assets/Navbar.module.scss";
+import navbarStyle from './assets/Navbar.module.scss'
 
 const Navbar = () => {
-  const songsContext = useContext(SongsContext);
-  const {currentSong} = songsContext;
+  const songsContext = useContext(SongsContext)
+  const {currentSong} = songsContext
 
   return (
     <nav className={navbarStyle.navbar}>
@@ -20,7 +20,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to={(currentSong && currentSong.slug) ? `/songs/${currentSong.slug}` : "/songs"} exact className={navbarStyle.item} activeClassName={navbarStyle.item_active}>
+          <NavLink to={(currentSong && currentSong.slug) ? `/songs/${currentSong.slug}` : '/songs'} exact className={navbarStyle.item} activeClassName={navbarStyle.item_active}>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172" fill="#ffffff">
               <path d="M64.5,21.5c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v14.33333v14.33333v44.31576c-2.25089,-0.79962 -4.64132,-1.31576 -7.16667,-1.31576c-11.87517,0 -21.5,9.62483 -21.5,21.5c0,11.87517 9.62483,21.5 21.5,21.5c11.87517,0 21.5,-9.62483 21.5,-21.5v-64.5h64.5v44.31576c-2.25089,-0.79962 -4.64131,-1.31576 -7.16667,-1.31576c-11.87517,0 -21.5,9.62483 -21.5,21.5c0,11.87517 9.62483,21.5 21.5,21.5c11.87517,0 21.5,-9.62483 21.5,-21.5v-64.5v-14.33333v-28.66667zM64.5,35.83333h64.5v14.33333h-64.5zM43,121.83333c3.94883,0 7.16667,3.21783 7.16667,7.16667c0,3.94883 -3.21783,7.16667 -7.16667,7.16667c-3.94883,0 -7.16667,-3.21783 -7.16667,-7.16667c0,-3.94883 3.21783,-7.16667 7.16667,-7.16667zM121.83333,121.83333c3.94883,0 7.16667,3.21783 7.16667,7.16667c0,3.94883 -3.21783,7.16667 -7.16667,7.16667c-3.94883,0 -7.16667,-3.21783 -7.16667,-7.16667c0,-3.94883 3.21783,-7.16667 7.16667,-7.16667z" />
             </svg>
@@ -43,6 +43,6 @@ const Navbar = () => {
       </ul>
     </nav>
   )
-};
+}
 
-export default Navbar;
+export default Navbar

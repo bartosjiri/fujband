@@ -1,44 +1,46 @@
-import React, {Fragment, useContext, useRef, useEffect} from "react";
-import {Link} from "react-router-dom";
+import React, {
+  Fragment, useContext, useRef, useEffect
+} from 'react'
+import {Link} from 'react-router-dom'
 
-import searchStyle from "./assets/Search.module.scss";
+import searchStyle from './assets/Search.module.scss'
 
-import Topbar from "../../layout/topbar/Topbar";
-import Content from "../../layout/content/Content";
+import Topbar from '../../layout/topbar/Topbar'
+import Content from '../../layout/content/Content'
 
-import SongsContext from "../../context/songs/songsContext";
+import SongsContext from '../../context/songs/songsContext'
 
 const Search = () => {
-  const songsContext = useContext(SongsContext);
-  const text = useRef();
-  const {searchSongs, clearSearchSongs, matchingSongs} = songsContext;
+  const songsContext = useContext(SongsContext)
+  const text = useRef()
+  const {searchSongs, clearSearchSongs, matchingSongs} = songsContext
 
   useEffect(() => {
-    clearSearchSongs();
-    text.current.focus();
+    clearSearchSongs()
+    text.current.focus()
     // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     if (matchingSongs === null) {
-      text.current.value = "";
+      text.current.value = ''
     }
-  });
+  })
 
   const onChange = (e) => {
-    if (text.current.value !== "") {
-      searchSongs(e.target.value);
+    if (text.current.value !== '') {
+      searchSongs(e.target.value)
     } else {
-      clearSearchSongs();
+      clearSearchSongs()
     }
-  };
+  }
 
   return (
     <Fragment>
       <Topbar
         title="Vyhledávání"
         closeLink="/songs"
-      ></Topbar>
+      />
       <Content>
         <div className={searchStyle.actions}>
           <div className={searchStyle.actions_input}>
@@ -53,8 +55,7 @@ const Search = () => {
               placeholder="Název skladby"
               className={searchStyle.actions_input_text}
               onChange={onChange}
-            >
-            </input>
+            />
             <div
               className={`${searchStyle.actions_input_clear} ${!matchingSongs && searchStyle.actions_input_clear_inactive}`}
               onClick={() => clearSearchSongs()}
@@ -77,10 +78,7 @@ const Search = () => {
         </div>
       </Content>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Search;
-
-
-
+export default Search

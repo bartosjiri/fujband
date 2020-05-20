@@ -1,22 +1,22 @@
-import React, {useContext} from "react";
+import React, {useContext} from 'react'
 
-import SettingsContext from "../../context/settings/settingsContext";
+import SettingsContext from '../../context/settings/settingsContext'
 
-import fontSizeStyle from "./assets/FontSize.module.scss";
+import fontSizeStyle from './assets/FontSize.module.scss'
 
 const FontSize = () => {
-  const settingsContext = useContext(SettingsContext);
-  const {setFontSize, fontSize} = settingsContext;
+  const settingsContext = useContext(SettingsContext)
+  const {setFontSize, fontSize} = settingsContext
 
   const [minValue, maxValue] = [6, 60]
   const step = 2
 
   const onChange = (option) => {
     if (option >= minValue && option <= maxValue) {
-      setFontSize(option);
-      localStorage.setItem("fontSize", option);
+      setFontSize(option)
+      localStorage.setItem('fontSize', option)
     }
-  };
+  }
 
   return (
     <div className={fontSizeStyle.selection}>
@@ -48,7 +48,7 @@ const FontSize = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default FontSize;
+export default FontSize
