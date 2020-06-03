@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Nejzpívanější písničky vždy po ruce">
-    <meta name="keywords" content="FUJ, FUJBand, zpěvník, lyrics, folklór">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="theme-color" content="#121212">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link href="./noscript.css" rel="stylesheet">
-    <title>FUJBand zpěvník</title>
-  </head>
-  <body>
-    <noscript>
-      <div class="noscript">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"fill="#ffffff"><path d="M86,7.27865c-2.8174,0 -5.63491,1.02618 -7.68457,3.07943l-67.95735,67.95735c-4.24267,4.24267 -4.24267,11.13365 0,15.36915l67.95735,67.97135c2.04967,2.04967 4.78207,3.17741 7.68457,3.17741c2.9025,0 5.62774,-1.12774 7.68457,-3.17741l67.97135,-67.97135c4.24267,-4.24267 4.24267,-11.13365 0,-15.36915l-67.97135,-67.95735c-2.05325,-2.05325 -4.86718,-3.07943 -7.68457,-3.07943zM86,22.92773l63.07226,63.07227l-63.07226,63.07226l-63.07227,-63.07226zM78.83333,50.16667v43h14.33333v-43zM78.83333,107.5v14.33333h14.33333v-14.33333z"></path></svg>
-        <h1>Javascript required</h1>
-        <a href="/">Reload page</a>
-      </div>
-    </noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Nejzpívanější písničky vždy po ruce">
+  <meta name="keywords" content="FUJ, FUJBand, zpěvník, lyrics, folklór">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="theme-color" content="#121212">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="./noscript.css" rel="stylesheet">
+  <title>FUJBand zpěvník</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+        fill="#ffffff">
+        <path
+          d="M86,7.27865c-2.8174,0 -5.63491,1.02618 -7.68457,3.07943l-67.95735,67.95735c-4.24267,4.24267 -4.24267,11.13365 0,15.36915l67.95735,67.97135c2.04967,2.04967 4.78207,3.17741 7.68457,3.17741c2.9025,0 5.62774,-1.12774 7.68457,-3.17741l67.97135,-67.97135c4.24267,-4.24267 4.24267,-11.13365 0,-15.36915l-67.97135,-67.95735c-2.05325,-2.05325 -4.86718,-3.07943 -7.68457,-3.07943zM86,22.92773l63.07226,63.07227l-63.07226,63.07226l-63.07227,-63.07226zM78.83333,50.16667v43h14.33333v-43zM78.83333,107.5v14.33333h14.33333v-14.33333z">
+        </path>
+      </svg>
+      <h1>Javascript required</h1>
+      <a href="/">Reload page</a>
+    </div>
+  </noscript>
+  <div id="root"></div>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
