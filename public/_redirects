@@ -1,1 +1,2 @@
+/admin/*    /admin/:splat
 /*    /index.html   200
