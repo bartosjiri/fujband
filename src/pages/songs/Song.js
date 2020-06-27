@@ -20,6 +20,7 @@ const Song = ({match}) => {
 
   useEffect(() => {
     setCurrentSong(match.params.slug)
+    // eslint-disable-next-line
   }, [])
 
   return (
