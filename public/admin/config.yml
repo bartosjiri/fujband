@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: bartosjiri/fujband
+  branch: content
+
+publish_mode: editorial_workflow
+
+media_folder: "public/media/uploads"
+public_folder: "/media/uploads"
+
+collections:
+  - name: "songs"
+    label: "Songs"
+    create: true
+    delete: false
+    editor:
+      preview: true
+    folder: "content/songs"
+    slug: "{{slug}}"
+    fields:
+        - {label: Title, name: title, widget: string}
+        - label: "Status"
+          name: "status"
+          widget: "select"
+          options: ["Published", "Draft", "Hidden"]
+          defualt: "Published"
+        - {label: Date / Order, name: date, widget: date}
+        - {label: Text, name: text, widget: markdown}
