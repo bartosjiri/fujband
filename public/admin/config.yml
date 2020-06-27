@@ -2,6 +2,7 @@ backend:
   name: github
   repo: bartosjiri/fujband
   branch: content
+  open_authoring: true
 
 publish_mode: editorial_workflow
 
