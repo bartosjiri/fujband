@@ -1,7 +1,7 @@
 backend:
-  name: github
-  repo: bartosjiri/fujband
-  branch: content
+  name: git-gateway
+  repo: fujband/fujband
+  branch: master
   open_authoring: true
 
 publish_mode: editorial_workflow
