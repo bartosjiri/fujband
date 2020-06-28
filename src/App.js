@@ -1,5 +1,7 @@
 import React from 'react'
-import {Router, Route, Switch} from 'react-router-dom'
+import {
+  Router, Route, Switch, Redirect
+} from 'react-router-dom'
 import {createBrowserHistory} from 'history'
 import ReactGA from 'react-ga'
 
@@ -37,6 +39,7 @@ const App = () => (
             <Route path="/songs/:slug" exact component={Song} />
             <Route path="/settings" exact component={Settings} />
             <Route path="/about" exact component={About} />
+            <Route path="/admin" exact><Redirect to="/admin/" /></Route>
             <Route component={NotFound} />
           </Switch>
           <Navbar />
