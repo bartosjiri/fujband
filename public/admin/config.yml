@@ -9,9 +9,15 @@ publish_mode: editorial_workflow
 media_folder: "public/media/uploads"
 public_folder: "/media/uploads"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
   - name: "songs"
     label: "Songs"
+    label_singular: "Song"
     create: true
     delete: false
     editor:
