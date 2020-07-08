@@ -1,0 +1,60 @@
+---
+title: Lady in black
+status: Published
+date: 2020-07-01T12:00:00.000Z
+text: |-
+  She came to me one morning\
+  One lonely Sunday morning\
+  Her long hair flowing\
+  In the midwinter wind\
+  I know not how she found me\
+  For in darkness I was walking\
+  And destruction lay around me\
+  From a fight I could not win\
+  Ah ah ah ...
+
+  She asked me title my foe then\
+  I said, the need within some men\
+  to fight and kill their brothers\
+  without thought of love or God\
+  And I begged her give me horses\
+  To trample down my enemies\
+  So eager was my passion\
+  To devour this waste of life\
+  Ah ah ah ...
+
+  But she wouldn't think of battle that\
+  Reduces men to animals\
+  So easy to begin\
+  And yet impossible to end\
+  For she's the mother of all men\
+  Who counselled me so wisely then\
+  I feared to walk alone again\
+  And asked if she would stay\
+  Ah ah ah ...
+
+  'Oh lady lend your hand,' I cried\
+  'And let me rest here at your side'\
+  'Have faith and trust in me'\
+  she said and filled my heart with life\
+  There is no strength in numbers\
+  Have no such misconception\
+  But when you need me\
+  Be assured I won't be far away'\
+  Ah ah ah ...
+
+  Thus having spoke she turned away\
+  And though I found no words to say\
+  I stood and watched until I saw\
+  Her black coat disappear\
+  My labour is no easier\
+  But now I know I'm not alone\
+  I find new heart each time\
+  I think upon that windy day\
+  And if one day she comes to you\
+  Drink deeply from her words so wise\
+  Take courage from her\
+  As your prize\
+  And say hello from me\
+  Ah ah ah ...
+---
